@@ -8,20 +8,36 @@
 
 ## 🎯 Objective
 
-This project provides practical experience in penetration testing by covering:
+This project provides practical, hands-on experience in ethical hacking by covering the full penetration testing lifecycle:
 
-- 🔍 Identifying the target system using reconnaissance techniques  
-- 📡 Scanning for open ports and active services using **Nmap**  
-- 🚨 Detecting potential vulnerabilities on the target machine  
-- 💥 Exploiting those vulnerabilities using **Metasploit (msfconsole)**  
-- 🔐 Gaining shell access to the target system  
-- 📝 Documenting all findings in a professional penetration testing report  
+- 🔍 Identifying the target system through active reconnaissance  
+- 📡 Scanning open ports and detecting active services using **Nmap**  
+- 🚨 Identifying vulnerabilities in exposed services  
+- 💥 Exploiting discovered vulnerabilities using **Metasploit (msfconsole)**  
+- 🔐 Gaining unauthorized shell access to the target system  
+- 📝 Documenting all steps and findings in a detailed professional report  
+
+---
+
+## 🧰 Tools Used
+
+Here are the tools used during this lab project:
+
+| 🧪 Tool               | 🔎 Purpose                                                   |
+|-----------------------|-------------------------------------------------------------|
+| `Netdiscover`         | Identify IP address of the target on the local network      |
+| `Nmap`                | Perform port scanning and service enumeration               |
+| `Metasploit Framework`| Exploit known vulnerabilities and gain shell access         |
+| `Google Dorking`      | Discover public vulnerabilities for specific software       |
+| `Linux Commands`      | Navigate file system and perform post-exploitation tasks    |
+| `John the Ripper`     | Crack password hashes (discussed as theoretical step)       |
+| `Hashcat`             | Alternative password cracker (discussed as theoretical step)|
 
 ---
 
 ## 🔬 Proof of Concept (PoC)
 
-A complete Proof of Concept (PoC) is available in this repository.
+📁 A comprehensive **Proof of Concept (PoC)** has been uploaded in this repository, illustrating every phase of the engagement.
 
 ---
 
@@ -29,47 +45,53 @@ A complete Proof of Concept (PoC) is available in this repository.
 
 ### 1. 🔎 Target Discovery
 
-- Identified the target IP using `netdiscover`.
+- Utilized `netdiscover` to identify the IP address of the target machine on the local network.
 
 ### 2. 🛠️ Port & Service Enumeration (Nmap)
 
-Performed a detailed Nmap scan to gather:
+Performed a detailed scan using **Nmap** to extract the following:
 
 - ✅ Open Ports  
 - ⚙️ Running Services  
-- 🖥️ Operating System Details  
-- 🔑 Service Banners and Encryption Keys  
+- 🖥️ Operating System Fingerprint  
+- 🔑 Encryption keys and service banners  
 
 ### 3. 🌐 Services Identified
 
-The Nmap scan revealed the following services:
+The target machine was found running the following services:
 
 - **FTP** – ProFTPD 1.3.3c  
-- **HTTP** – Web server  
-- **SSH** – Secure shell access  
+- **HTTP** – Web server (port 80)  
+- **SSH** – Secure Shell (port 22)  
 
 ### 4. 🚩 Vulnerability Exploitation
 
-- The FTP service (ProFTPD 1.3.3c) was found to be vulnerable.  
-- Used **Metasploit Framework** to exploit the vulnerability.  
-- Successfully gained shell access to the target system.
+- Found **ProFTPD 1.3.3c** to be vulnerable using public exploit databases and search techniques.  
+- Leveraged the **Metasploit Framework** to exploit the FTP vulnerability.  
+- Gained **shell access** successfully.
 
 ### 5. 🔍 Post-Exploitation Activities
 
-- Accessed and examined the `/etc/passwd` file to enumerate user accounts.  
-- Explored password cracking strategies using **John the Ripper** and **Hashcat** for further post-exploitation.
+- Accessed and examined `/etc/passwd` for user account details.  
+- Theoretically explored **password cracking** methods using:
+  - 🧠 **John the Ripper**
+  - ⚡ **Hashcat**
 
 ---
 
 ## 🧠 Conclusion
 
-This lab simulated a real-world penetration testing scenario, strengthening essential skills in:
+This lab provided a structured, real-world simulation of a typical penetration test, reinforcing critical cybersecurity skills:
 
-- Information Gathering  
-- Vulnerability Scanning  
-- Exploitation Techniques  
-- Post-Exploitation Strategies  
+- 🎯 Reconnaissance and Enumeration  
+- 🛠️ Vulnerability Analysis  
+- 💣 Exploitation Using Metasploit  
+- 🔍 Post-Exploitation Techniques  
 
-It offered a comprehensive introduction to ethical hacking using widely-used tools like **Nmap** and **Metasploit**.
+It offered valuable exposure to **Nmap**, **Metasploit**, and other tools widely used in ethical hacking and Capture the Flag (CTF) environments.
 
 ---
+
+## 📁 Repository Structure
+
+

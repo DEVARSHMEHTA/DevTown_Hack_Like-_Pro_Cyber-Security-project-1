@@ -92,6 +92,3 @@ It offered valuable exposure to **Nmap**, **Metasploit**, and other tools widely
 
 ---
 
-## 📁 Repository Structure
-
-
